@@ -37,12 +37,9 @@
     // Animate the background of .smooth-content with a stricter, saturated palette
     gsap.to(container.querySelector('.smooth-content'), {
       background: [
-        // Start: deep red to purple
-        "linear-gradient(120deg, #2a0a12 0%, #6b162b 40%, #3a185b 100%)",
-        // Middle: purple to blue
-        "linear-gradient(120deg, #3a185b 0%, #7c3aed 40%, #2563eb 100%)",
-        // End: blue to deep blue
-        "linear-gradient(120deg, #1e3a5c 0%, #2563eb 60%, #0e101c 100%)"
+        "linear-gradient(120deg, #d85a80 0%, #d85a80 30%, #d85a80 60%, #d85a80 100%)",
+        "linear-gradient(120deg, #2563eb 0%, #2563eb 30%, #233a5e 60%, #2563eb 100%)",
+        "linear-gradient(120deg, #662ba1 0%, #8c4acf 30%, #662ba1 60%, #662ba1 100%)"
       ],
       scrollTrigger: {
         trigger: container.querySelector('.smooth-content'),
@@ -53,11 +50,11 @@
     });
   });
 </script>
-
+<!--  #32619a -->
 <div
   bind:this={container}
   class="min-h-screen w-full overflow-x-hidden font-sans text-white transition-colors duration-700"
-  style="background: linear-gradient(120deg, #0e101c, #232526, #2c5364);"
+  style="background: linear-gradient(120deg, #32619a, #32619a, #32619a);"
 >
   <div class="smooth-content">
     <section class="section min-h-screen flex flex-col justify-center items-center px-8 opacity-0">

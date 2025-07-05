@@ -28,3 +28,18 @@ html {
   scrollbar-width: thin;
   scrollbar-color: #6b7280 #0e101c;
 }
+
+.smooth-content::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.15;
+  z-index: 1;
+  background: url('https://www.transparenttextures.com/patterns/noise.png');
+}
+
+.smooth-content {
+  position: relative;
+  z-index: 0;
+}
